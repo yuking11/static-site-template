@@ -1,0 +1,38 @@
+{
+  /* Linter and Formatter */
+  // linter
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true, // eslint
+    "source.fixAll.tslint": true, // tslint
+    "source.fixAll.stylelint": true // Stylelint
+  },
+  "stylelint.validate": ["css", "scss"],
+  "scss.validate": false,
+  "css.validate": false,
+  // formatter
+  // デフォルトフォーマッターの設定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // other
+  "eslint.validate": ["javascript", "javascriptreact"]
+  // "javascript.validate.enable": false,
+}

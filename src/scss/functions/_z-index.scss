@@ -1,0 +1,44 @@
+@use 'sass:list';
+@use 'sass:map';
+
+// -------------------------------------------
+// z-index
+// https://github.com/kojika17/fawn/blob/master/core/fawn/functions/_z-index.scss
+// -------------------------------------------
+
+@function z($options...) {
+  $option-length: list.length($options);
+  $point: 1;
+  $is-index: 1;
+  $temp-map: $z-map;
+  $get-key: list.nth($options, $option-length);
+
+  @if $option-length > 1 {
+    @each $option in $options {
+      @if $option != $get-key {
+        $temp-map: map.get($temp-map, $option);
+      }
+    }
+  }
+
+  @if not $z-map-reverse {
+    $get-value: map.get($temp-map, $get-key);
+    $is-index: list.index($temp-map, ($get-key $get-value));
+  } @else {
+    $counter: 1;
+    @if $z-map-reverse {
+      $counter: list.length($temp-map);
+      $point: -1;
+    }
+
+    @each $map-key, $map-value in $temp-map {
+      @if $map-key == $get-key {
+        $is-index: $counter;
+      }
+
+      $counter: $counter + $point;
+    }
+  }
+
+  @return $is-index;
+}

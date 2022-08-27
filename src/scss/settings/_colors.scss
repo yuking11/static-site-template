@@ -1,0 +1,115 @@
+@use 'sass:color';
+
+// =====================================================
+// Colors
+// =====================================================
+
+$white-color: #fff;
+$black-color: #000;
+$gray-50: #fff; // white
+$gray-100: #f9f9f9; // 背景色
+$gray-200: #eaeaea; // ステータス型
+$gray-300: #d3d3d3; // 罫線
+$gray-400: #bcbcbc; // 非活性@use 'sass:color';
+$gray-500: #959595; // プレースホルダー
+$gray-600: #747474; // 注釈
+$gray-700: #6e6e6e; // 未使用
+$gray-800: #4b4b4b; // 未使用
+$gray-900: #242424; // フォントカラー
+$label-color-01: #0acba6;
+$label-color-02: #6596e1;
+$blue-400: #6596e1; // フォーカス
+$red-400: #d53f3f;
+$saturday-color: $blue-400; // 土曜日
+$sunday-color: #ea437f; // 日曜日
+$today-color: #fffbee; // 今日
+$main-pink: #eb5391; // メインカラー
+
+// error color
+
+$error-main-color: $red-400;
+$error-bg-color: #fff2f2;
+$error-sub-color: #f88e8e;
+
+// base color
+
+$base-font-color: $gray-900;
+$base-bg-color: $gray-100;
+
+// base state color
+
+$base-primary-color: $main-pink;
+$base-secondary-color: #007bff;
+$base-success-color: #28a745;
+$base-danger-color: #dc3545;
+$base-warning-color: #d5a003;
+$base-info-color: #17a2b8;
+$base-light-color: #f6f7f8;
+$base-dark-color: #343a40;
+$base-white-color: #fff;
+$base-black-color: #212121;
+$base-neutral-color: #9fa7ac;
+
+// status color
+
+$status-primary-main-color: color.adjust($main-pink, $blackness: 10%);
+$status-primary-base-color: color.adjust($main-pink, $lightness: 10%);
+$status-secondary-main-color: #004085;
+$status-secondary-base-color: #b0d3f8;
+$status-success-main-color: #1c652d;
+$status-success-base-color: #e7f5ea;
+$status-danger-main-color: #93242f;
+$status-danger-base-color: #fadfe1;
+$status-warning-main-color: #856404;
+$status-warning-base-color: #fff3cd;
+$status-info-main-color: #0c5460;
+$status-info-base-color: #d1ecf1;
+$status-light-main-color: #818182;
+$status-light-base-color: #c2c2c2;
+$status-dark-main-color: #4a4f55;
+$status-dark-base-color: #dedede;
+$status-white-main-color: #fff;
+$status-white-base-color: #fff;
+$status-black-main-color: #f4f4f4;
+$status-black-base-color: #696969;
+
+// hover
+
+$base-hover-bg-color: color.adjust($main-pink, $lightness: 35%);
+
+// border
+
+$base-border-color: $gray-300;
+$form-border-color: $gray-500;
+
+// disabled
+
+$base-disabled-color: $gray-400;
+$base-disabled-bg-color: $gray-100;
+
+// overlay
+
+$overlay-color: rgba($black-color, 0.3);
+
+// text-shadow
+
+$catch-shadow-mb: 3px 3px 2px $main-pink, -3px 3px 2px $main-pink, 3px -3px 2px $main-pink,
+  -3px -3px 2px $main-pink, 3px 0 2px $main-pink, 0 3px 2px $main-pink, -3px 0 2px $main-pink,
+  0 -3px 2px $main-pink;
+$catch-shadow-pc: 4px 4px 2px $main-pink, -4px 4px 2px $main-pink, 4px -4px 2px $main-pink,
+  -4px -4px 2px $main-pink, 4px 0 2px $main-pink, 0 4px 2px $main-pink, -4px 0 2px $main-pink,
+  0 -4px 2px $main-pink;
+
+// box-shadow
+
+$modal-box-shadow: 0 24px 38px 3px rgba($black-color, 0.14), 0 9px 45px 8px rgba($black-color, 0.12),
+  0 11px 15px -7px rgba($black-color, 0.2);
+$card-box-shadow: 0 4px 4px rgba($black-color, 0.16), 0 0 4px rgba($black-color, 0.16);
+$box-shadow: 0 2px 2px rgba($black-color, 0.3);
+$filter-shadow-white: drop-shadow(0 0 2px $gray-900);
+
+// sns
+
+$twitter: #55acee;
+$instagram: #fff;
+$youtube: #e52d27;

@@ -1,0 +1,30 @@
+@use 'sass:math';
+
+// -------------------------------------------
+// text
+// -------------------------------------------
+
+// text-indent
+// ================================== //
+@mixin indent($margin: 1em) {
+  text-indent: (-$margin);
+  padding-left: $margin;
+}
+
+// letter spacing for PSD
+// ================================== //
+@mixin lts($value, $center: false) {
+  @if $center == true {
+    margin-left: math.div($value, 1000) * 1em;
+  }
+
+  letter-spacing: math.div($value, 1000) * 1em;
+}
+
+// ellipsis
+// ================================== //
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+// -------------------------------------------
+// Function - font-size
+// -------------------------------------------
+
+@function fs($size, $base: $base-font-size) {
+  @return math.div($size, $base) * 1rem;
+}
+
+@function get-vw($size, $viewport: 320) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@function fs-vw($size: $base-font-size) {
+  @return get-vw($size);
+}

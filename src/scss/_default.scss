@@ -1,0 +1,100 @@
+@use 'sass:color';
+
+// =====================================================
+// Default
+// =====================================================
+
+html.is-menu-opened {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+  width: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: $font-smoothing;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: $text-rendering;
+  background-color: $base-bg-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  line-height: $base-paragraph-line-height;
+  word-wrap: break-all;
+  word-break: break-all;
+  padding: env(safe-area-inset-top) 0 0;
+}
+
+html.is-menu-opened body {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $base-heading-line-height;
+  overflow-wrap: break-word;
+}
+
+a {
+  color: $main-pink;
+  text-decoration: underline;
+
+  &:hover {
+    color: color.adjust($main-pink, $lightness: 4%);
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border-radius: 4px;
+
+  &:focus {
+    outline-color: $blue-400;
+  }
+}
+
+::selection {
+  background-color: $main-pink;
+  color: $gray-50;
+}
+
+::placeholder {
+  color: $gray-500;
+}
+
+input::placeholder {
+  color: $gray-500;
+}
+
+textarea::placeholder {
+  color: $gray-500;
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  padding-left: $base-space * 1.5;
+}

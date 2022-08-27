@@ -1,0 +1,9 @@
+@use 'sass:math';
+
+// -------------------------------------------
+// Function - line-height
+// -------------------------------------------
+
+@function lh($lh, $fs) {
+  @return math.div($lh, $fs);
+}

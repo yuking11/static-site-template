@@ -1,0 +1,72 @@
+// =====================================================
+// variables
+// =====================================================
+
+// Style config
+// ================================== //
+
+$media-screen-sp: 500;
+$media-screen-tab: 700;
+$media-screen-pc: 1024;
+$media-screen-pc-wide: 1440;
+
+// Assign Site Width
+
+$site-width: 1440px;
+$sidebar-width: 392px;
+
+// element margin
+
+$base-space: 1rem;
+
+// element height
+
+$header-height: 66px;
+$header-height-pc: 82px;
+$header-meta-height: 18px;
+
+// Font
+// ================================== //
+
+// antialiased,subpixel-antialiased,none
+
+$font-smoothing: antialiased;
+
+// auto,optimizeSpeed,optimizeLegibility,geometricPrecision
+
+$text-rendering: auto;
+
+// Base font-size
+$base-font-size: 16;
+
+// Base line-height
+
+$base-heading-line-height: 1.5;
+$base-paragraph-line-height: 1.8;
+
+// Base font-family
+
+$base-font-family: 'M PLUS 1p', -apple-system, 'BlinkMacSystemFont', Arial, HiraginoSans,
+  'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+
+// cursive
+
+$cursive-font-family: 'Damion', cursive;
+
+// z-index
+// ================================== //
+
+$z-map: (
+  progress-bar: true,
+  modal: true,
+  overlay: true,
+  loading: true,
+  header: true,
+  header-meta: true,
+  header-logo: true,
+  menu-btn: true,
+  menu: true,
+  menu-child: true,
+  inner-loading: true,
+);
+$z-map-reverse: true;

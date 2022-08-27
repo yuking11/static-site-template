@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", ".github", ".history", "dist"]
+}
