@@ -25,7 +25,7 @@
     "*.{ts,js,scss}": "prettier -w -u"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
+    "@commitlint/cli": "^17.4.1",
     "@commitlint/config-conventional": "^17.0.3",
     "@types/node": "^18.7.13",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
